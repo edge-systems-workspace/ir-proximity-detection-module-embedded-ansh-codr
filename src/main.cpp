@@ -7,6 +7,9 @@
  * @date 2026-02-21
  */
 
+const int IR_PIN = 2;
+int sensorState = 0;
+
 void setup() {
 }
 
