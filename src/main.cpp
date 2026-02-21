@@ -11,6 +11,9 @@ const int IR_PIN = 2;
 int sensorState = 0;
 
 void setup() {
+    Serial.begin(9600);
+    pinMode(IR_PIN, INPUT);
+    Serial.println("IR Obstacle Detection System Initialized");
 }
 
 void loop() {
