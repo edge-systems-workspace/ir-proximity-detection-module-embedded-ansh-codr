@@ -2,7 +2,7 @@
 
 /**
  * @file main.cpp
- * @brief IR Obstacle Detection System
+ * @brief Embedded Obstacle Detection System using an IR proximity sensor
  * @author ansh-codr
  * @date 2026-02-21
  */
@@ -18,4 +18,12 @@ void setup() {
 
 void loop() {
     sensorState = digitalRead(IR_PIN);
+
+    if (sensorState == LOW) {
+        Serial.println("Obstacle Detected");
+    } else {
+        Serial.println("No Obstacle");
+    }
+
+    delay(300);
 }
